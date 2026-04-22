@@ -1,96 +1,138 @@
 <!DOCTYPE html>
-<html lang = "uk">
+<html lang="uk">
 <head>
-  <meta charset = "UTF-8">
-  <meta name    = "viewport" content = "width=device-width, initial-scale=1.0">
-  <title>Visionary — Фотограф</title>
-  <link rel = "stylesheet" href = "style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VISIONARY</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
+  <!-- NAV -->
   <nav>
-    <a     href  = "#" class = "logo">Visionary</a>
-    <ul    class = "nav-links">
-    <li><a href  = "#" class = "active">Home</a></li>
-    <li><a href  = "#">Gallery</a></li>
-    <li><a href  = "#">Education</a></li>
-    <li><a href  = "#">Contact</a></li>
+    <a href="#" class="logo">VISIONARY</a>
+    <ul class="nav-links">
+      <li><a href="#" class="active">Home</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#about">Education</a></li>
+      <li><a href="#contacts">Contact</a></li>
     </ul>
   </nav>
 
-  <section class = "hero">
-  <img     src   = "man.png" alt = "Photographer portrait">
+  <!-- HERO -->
+  <section class="hero">
+    <img
+      class="hero-img"
+      src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=1400&q=80&auto=format&fit=crop"
+      alt="Photographer portrait"
+    />
+    <div class="hero-overlay"></div>
+    <div class="hero-text">
+      <h1>Capturing<br>Moments</h1>
+      <p>Photography by Zoomin · Kamyanske</p>
+    </div>
   </section>
 
-  <section class = "info-section">
-
-    <div class = "about">
-      <h3>Про мене</h3>
-      <p>
-        Я фотограф, який обожнює нестандартні локації, унікальних людей та сонячне світло!
-        Я спеціалізуюся на студійній зйомці, але без вагань приймаю будь-які виклики.
-      </p>
-      <p>
-        Я народився в Кам'янському і з самого дитинства любив спостерігати за людьми на вулицях,
-        помічаючи їхні особливості та погляди.
-      </p>
+  <!-- ABOUT + CONTACTS -->
+  <section class="info-section" id="about">
+    <div class="info-block">
+      <h2>Про мене</h2>
+      <p>Я фотограф, який обожнює нестандартні локації, унікальних людей та сонячне світло. Я спеціалізуюся на студійній зйомці, але без вагань приймаю будь-які виклики.</p>
+      <p>Я народився в Кам'янському і з самого дитинства любив спостерігати за людьми на вулицях, помічаючи їхні особливості та погляди.</p>
+      <p>Я обожнюю експерименти та нові місця. Моє останнє захоплення — чорно-біла фотографія, стильна та неповторна.</p>
     </div>
 
-    <div class = "contacts">
-      <h3>Контакти</h3>
-      <div class = "contact-item">
-      <div class = "label">Phone:</div>
-        <span>(719) 445-2808</span>
+    <div class="info-block" id="contacts">
+      <h2>Контакти</h2>
+      <div class="contact-item">
+        <div class="label">Phone:</div>
+        <a href="tel:+17194452808" class="value">(719) 445-2808</a>
       </div>
-      <div class = "contact-item">
-      <div class = "label">E-mail:</div>
-      <a   href  = "mailto:zoomin@email.com">zoomin@email.com</a>
+      <div class="contact-item">
+        <div class="label">E-mail:</div>
+        <a href="mailto:zoomin@email.com" class="value">zoomin@email.com</a>
       </div>
-      <div class = "contact-item">
-      <div class = "label">Instagram:</div>
-      <a   href  = "#">zoomin</a>
+      <div class="contact-item">
+        <div class="label">Instagram:</div>
+        <a href="#" class="value">zoomin</a>
+      </div>
+      <div class="contact-item">
+        <div class="label">Facebook:</div>
+        <a href="#" class="value">www.facebook.com/zoomin</a>
       </div>
     </div>
 
-    <div class = "hero-thumb">
-    <img src   = "si.png" alt = "Camera lens">
+    <div class="info-block">
+      <img
+        class="info-photo"
+        src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=800&q=80&auto=format&fit=crop"
+        alt="Camera close-up"
+      />
     </div>
-
   </section>
 
+  <!-- GALLERY -->
+  <section class="gallery-section" id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=600&q=80&auto=format&fit=crop" alt="Portrait 1" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=600&q=80&auto=format&fit=crop" alt="Portrait 2" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=600&q=80&auto=format&fit=crop" alt="Portrait 3" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=600&q=80&auto=format&fit=crop" alt="Portrait 4" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=600&q=80&auto=format&fit=crop" alt="Portrait 5" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=600&q=80&auto=format&fit=crop" alt="Portrait 6" />
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
   <footer>
-    <div class = "footer-top">
-    <div class = "footer-brand">
-    <a   href  = "#" class = "logo">Visionary</a>
-        <p>Професійна зйомка та художня ретуш.</p>
-        <div class = "social-links">
-        <a   href  = "#">IG</a>
-        <a   href  = "#">IN</a>
-        <a   href  = "#">X</a>
-        </div>
-      </div>
-
-      <div class = "footer-col">
-        <h4>Features</h4>
-        <ul>
-          <li><a href = "#">Core features</a></li>
-          <li><a href = "#">Pro experience</a></li>
-        </ul>
-      </div>
-
-      <div class = "footer-col">
-        <h4>Support</h4>
-        <ul>
-          <li><a href = "#">Contact</a></li>
-          <li><a href = "#">Legal</a></li>
-        </ul>
-      </div>
+    <div class="footer-brand">
+      <a href="#" class="logo">Y</a>
+      <p>About what your company does.</p>
     </div>
-
-    <div class="footer-bottom">
-      © 2026 Visionary. Всі права захищені.
+    <div class="footer-col">
+      <h4>Features</h4>
+      <ul>
+        <li><a href="#">Core features</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Pricing</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Learn more</h4>
+      <ul>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">FAQ</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Support</h4>
+      <ul>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Terms</a></li>
+      </ul>
     </div>
   </footer>
+
+  <div class="footer-bottom">
+    <p>© 2026 VISIONARY. All rights reserved.</p>
+    <p>Photography by Zoomin</p>
+  </div>
 
 </body>
 </html>
