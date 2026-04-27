@@ -1,99 +1,134 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Visionary - Плани курсів</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Education — VISIONARY</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/nav.css" />
+  <link rel="stylesheet" href="css/education.css" />
+  <link rel="stylesheet" href="css/footer.css" />
 </head>
 <body>
 
-    <header class="header">
-        <div class="container">
-            <div class="logo">VISIONARY</div>
-            <nav class="nav">
-                <a href="index.html">Home</a>
-                <a href="#">Gallery</a>
-                <a href="education.html">Education</a>
-                <a href="#">Contact</a>
-            </nav>
+  <header>
+    <nav class="nav nav--scrolled">
+      <a href="index.html" class="nav__logo">VISIONARY</a>
+      <ul class="nav__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="education.html" class="active">Education</a></li>
+        <li><a href="contacts.html">Contact</a></li>
+      </ul>
+      <button class="nav__burger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <div class="nav__drawer">
+    <a href="index.html">Home</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="education.html">Education</a>
+    <a href="contacts.html">Contact</a>
+  </div>
+
+  <main class="edu-page">
+    <div class="edu-page__header">
+      <p class="edu-page__eyebrow">Photography courses</p>
+      <h1 class="edu-page__title">Навчання</h1>
+      <p class="edu-page__desc">
+        Обери план, який підходить тобі. Від основ до індивідуального наставництва —
+        я передаю свій досвід у зручному форматі.
+      </p>
+    </div>
+
+    <div class="plans">
+
+      <div class="plan reveal">
+        <div>
+          <p class="plan__name">Plan 1</p>
+          <p class="plan__price">$2 <sub>/ month</sub></p>
         </div>
-    </header>
+        <ul class="plan__features">
+          <li>Навчальні роботи зі світлом та композицією</li>
+          <li>Освоєння різних жанрів зйомки</li>
+          <li>Доступ до закритого чату</li>
+        </ul>
+        <a href="contacts.html" class="btn">Sign up</a>
+      </div>
 
-    <main class="main-content">
-        <div class="container">
-            <h1 class="page-title">Плани курсів</h1>
-
-            <div class="plans-grid">
-                <div class="plan-card">
-                    <div class="plan-header">
-                        <p class="plan-name">Plan 1</p>
-                        <h2 class="plan-price">$2 <span>/ month</span></h2>
-                    </div>
-                    <ul class="plan-features">
-                        <li>Навчальні роботи зі світлом та композицією</li>
-                        <li>Освоєння різних жанрів зйомки</li>
-                    </ul>
-                    <a href="#" class="sign-up-btn">Sign up</a>
-                </div>
-
-                <div class="plan-card">
-                    <div class="plan-header">
-                        <p class="plan-name">Plan 2</p>
-                        <h2 class="plan-price">$5 <span>/ month</span></h2>
-                    </div>
-                    <ul class="plan-features">
-                        <li>Увесь перший план</li>
-                        <li>Створення свого бренду та світло</li>
-                    </ul>
-                    <a href="#" class="sign-up-btn">Sign up</a>
-                </div>
-
-                <div class="plan-card">
-                    <div class="plan-header">
-                        <p class="plan-name">Plan 3</p>
-                        <h2 class="plan-price">$10 <span>/ month</span></h2>
-                    </div>
-                    <ul class="plan-features">
-                        <li>Увесь 2 план</li>
-                        <li>Навчання під керівництвом індивідуального наставника</li>
-                    </ul>
-                    <a href="#" class="sign-up-btn">Sign up</a>
-                </div>
-            </div>
+      <div class="plan plan--featured reveal" style="transition-delay:0.15s">
+        <div>
+          <p class="plan__name">Plan 2</p>
+          <p class="plan__price">$5 <sub>/ month</sub></p>
         </div>
-    </main>
+        <ul class="plan__features">
+          <li>Увесь перший план</li>
+          <li>Створення свого бренду та робота зі світлом</li>
+          <li>Щотижневий розбір ваших знімків</li>
+          <li>Пріоритетна підтримка</li>
+        </ul>
+        <a href="contacts.html" class="btn btn--solid">Sign up</a>
+      </div>
 
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-cols">
-                <div class="footer-brand">
-                    <div class="logo">VISIONARY</div>
-                    <p>Descriptive line about what your company does.</p>
-                </div>
-                <div class="footer-links">
-                    <div>
-                        <h4>Features</h4>
-                        <a href="#">Core features</a>
-                        <a href="#">Pro experience</a>
-                        <a href="#">Integrations</a>
-                    </div>
-                    <div>
-                        <h4>Learn more</h4>
-                        <a href="#">Blog</a>
-                        <a href="#">Case studies</a>
-                        <a href="#">Best practices</a>
-                    </div>
-                    <div>
-                        <h4>Support</h4>
-                        <a href="#">Contact</a>
-                        <a href="#">Support</a>
-                        <a href="#">Legal</a>
-                    </div>
-                </div>
-            </div>
+      <div class="plan reveal" style="transition-delay:0.3s">
+        <div>
+          <p class="plan__name">Plan 3</p>
+          <p class="plan__price">$10 <sub>/ month</sub></p>
         </div>
-    </footer>
+        <ul class="plan__features">
+          <li>Увесь 2 план</li>
+          <li>Навчання під керівництвом індивідуального наставника</li>
+          <li>Спільні зйомки у студії</li>
+          <li>Портфоліо-ревʼю наприкінці місяця</li>
+        </ul>
+        <a href="contacts.html" class="btn">Sign up</a>
+      </div>
 
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__brand">
+      <a href="index.html" class="logo">VISIONARY</a>
+      <p>Photography by Zoomin<br>Kamyanske, Ukraine</p>
+    </div>
+    <div class="footer__col">
+      <h4>Navigate</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="contacts.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <h4>Learn</h4>
+      <ul>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="education.html">Courses</a></li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <h4>Social</h4>
+      <ul>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="mailto:zoomin@email.com">Email</a></li>
+      </ul>
+    </div>
+  
+  <div class="footer__bottom">
+    <p>&copy; 2026 VISIONARY. All rights reserved.</p>
+    <p>Photography by Zoomin</p>
+  </div>
+</footer>
+  <script src="js/main.js"></script>
 </body>
 </html>

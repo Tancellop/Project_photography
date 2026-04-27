@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — VISIONARY</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/nav.css" />
+  <link rel="stylesheet" href="css/contacts.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+</head>
+<body>
+
+  <header>
+    <nav class="nav nav--scrolled">
+      <a href="index.html" class="nav__logo">VISIONARY</a>
+      <ul class="nav__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="contacts.html" class="active">Contact</a></li>
+      </ul>
+      <button class="nav__burger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <div class="nav__drawer">
+    <a href="index.html">Home</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="education.html">Education</a>
+    <a href="contacts.html">Contact</a>
+  </div>
+
+  <main class="contacts-page">
+    <div class="contacts-page__inner">
+
+      
+      <div class="contacts-info">
+        <div class="contacts-info__top">
+          <h1>Зв'яжіться<br>зі мною</h1>
+          <p>
+            Є ідея для зйомки або питання про курси — пишіть.
+            Відповідаю протягом доби.
+          </p>
+
+          <ul class="contacts-list">
+            <li class="contacts-list__item">
+              <div class="lbl">Phone</div>
+              <a href="tel:+17194452808">(719) 445-2808</a>
+            </li>
+            <li class="contacts-list__item">
+              <div class="lbl">E-mail</div>
+              <a href="mailto:zoomin@email.com">zoomin@email.com</a>
+            </li>
+            <li class="contacts-list__item">
+              <div class="lbl">Location</div>
+              <span>Кам'янське, Україна</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="contacts-info__bottom">
+          <nav class="contacts-socials">
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+          </nav>
+        </div>
+      </div>
+
+      
+      <div class="contacts-form-wrap">
+        <form class="contact-form" novalidate>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="name">Ім'я</label>
+              <input type="text" id="name" name="name" placeholder="Ваше ім'я" required />
+            </div>
+            <div class="form-field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" required />
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label for="subject">Тема</label>
+            <input type="text" id="subject" name="subject" placeholder="Зйомка / Курс / Питання" />
+          </div>
+
+          <div class="form-field">
+            <label for="message">Повідомлення</label>
+            <textarea id="message" name="message" placeholder="Розкажіть детальніше..." required></textarea>
+          </div>
+
+          <div class="form-submit">
+            <button type="submit" class="btn">Надіслати</button>
+            <p class="form-success-msg">Отримано, відповім найближчим часом!</p>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__brand">
+      <a href="index.html" class="logo">VISIONARY</a>
+      <p>Photography by Zoomin<br>Kamyanske, Ukraine</p>
+    </div>
+    <div class="footer__col">
+      <h4>Navigate</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="contacts.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <h4>Learn</h4>
+      <ul>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="education.html">Courses</a></li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <h4>Social</h4>
+      <ul>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="mailto:zoomin@email.com">Email</a></li>
+      </ul>
+    </div>
+  
+  <div class="footer__bottom">
+    <p>&copy; 2026 VISIONARY. All rights reserved.</p>
+    <p>Photography by Zoomin</p>
+  </div>
+</footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

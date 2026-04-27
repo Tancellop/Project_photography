@@ -1,0 +1,129 @@
+.hero {
+  position: relative;
+  height: 100svh; 
+  min-height: 600px;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+}
+
+.hero__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 15%;
+  filter: grayscale(100%) contrast(1.05) brightness(0.9);
+  /* починається трохи збільшеним, щоб анімація мала від чого зменшуватись */
+  transform: scale(1.04);
+  animation: hero-zoom 8s ease forwards;
+}
+
+@keyframes hero-zoom {
+  to { transform: scale(1); }
+}
+
+.hero__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  
+  background: linear-gradient(
+    to bottom,
+    rgba(10, 10, 10, 0.05) 0%,
+    rgba(10, 10, 10, 0.08) 50%,
+    rgba(10, 10, 10, 0.65) 100%
+  );
+}
+
+.hero__content {
+  position: relative;
+  z-index: 2;
+  padding: 0 var(--page-x) clamp(48px, 7vh, 80px);
+}
+
+.hero__title {
+  font-family: var(--font-display);
+  font-size: clamp(4rem, 11vw, 10rem);
+  line-height: 0.92;
+  letter-spacing: 0.02em;
+
+  /* opacity: 0 тут навмисно — без цього текст мигне
+     до того як спрацює затримка анімації */
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fade-up 1s ease forwards 0.4s;
+}
+
+.hero__sub {
+  margin-top: 20px;
+  font-size: clamp(0.75rem, 1.2vw, 0.95rem);
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: rgba(245, 245, 240, 0.6);
+
+  opacity: 0;
+  transform: translateY(16px);
+  animation: fade-up 0.9s ease forwards 0.85s;
+}
+
+.hero__scroll {
+  position: absolute;
+  bottom: 36px;
+  right: var(--page-x);
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+
+  opacity: 0;
+  animation: fade-up 0.8s ease forwards 1.4s;
+}
+
+.hero__scroll span {
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(245, 245, 240, 0.45);
+  writing-mode: vertical-rl;
+}
+
+.hero__scroll-line {
+  width: 1px;
+  height: 60px;
+  background: rgba(245, 245, 240, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+/*
+  ::after починається вище видимої зони і їде вниз за межу.
+  overflow: hidden на батьківському елементі обрізає його — видно тільки
+  ту частину, що всередині смужки 60px. Виглядає як промінь світла вздовж дроту.
+*/
+.hero__scroll-line::after {
+  content: '';
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--white);
+  animation: scroll-line 1.8s ease-in-out infinite 1.6s;
+}
+
+@keyframes scroll-line {
+  0%   { top: -100%; }
+  100% { top: 100%; }
+}
+
+@keyframes fade-up {
+  to { opacity: 1; transform: translateY(0); }
+}

@@ -1,82 +1,133 @@
 <!DOCTYPE html>
 <html lang="uk">
-  <link rel="stylesheet" href="styles.css" />
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GALLERY</title>
+  <title>Gallery — VISIONARY</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/nav.css" />
+  <link rel="stylesheet" href="css/gallery.css" />
+  <link rel="stylesheet" href="css/footer.css" />
 </head>
-
 <body>
-  <nav>
-    <a href="#" class="logo">GALLERY</a>
-    <ul class="nav-links">
-      <li><a href="#">Home</a></li>
-      <li><a href="#gallery" class="active">Gallery</a></li>
-      <li><a href="#about">Education</a></li>
-      <li><a href="#contacts">Contact</a></li>
-    </ul>
-  </nav>
-  <section class="gallery-section" id="gallery">
-    <div class="gallery-grid">
-      <div class="gallery-item">
-        <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=600&q=80&auto=format&fit=crop" alt="Portrait 1" />
-      </div>
-      <div class="gallery-item">
-        <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=600&q=80&auto=format&fit=crop" alt="Portrait 2" />
-      </div>
-      <div class="gallery-item">
-        <img src="https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=600&q=80&auto=format&fit=crop" alt="Portrait 3" />
-      </div>
-      <div class="gallery-item">
-        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=600&q=80&auto=format&fit=crop" alt="Portrait 4" />
-      </div>
-      <div class="gallery-item">
-        <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=600&q=80&auto=format&fit=crop" alt="Portrait 5" />
-      </div>
-      <div class="gallery-item">
-        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=600&q=80&auto=format&fit=crop" alt="Portrait 6" />
-      </div>
-    </div>
-  </section>
 
-  <footer>
-    <div class="footer-brand">
-      <a href="#" class="logo">Y</a>
-      <p>About what your company does.</p>
-    </div>
-    <div class="footer-col">
-      <h4>Features</h4>
-      <ul>
-        <li><a href="#">Core features</a></li>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">Pricing</a></li>
+  <header>
+    <nav class="nav nav--scrolled">
+      <a href="index.html" class="nav__logo">VISIONARY</a>
+      <ul class="nav__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="contacts.html">Contact</a></li>
       </ul>
-    </div>
-    <div class="footer-col">
-      <h4>Learn more</h4>
-      <ul>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">FAQ</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h4>Support</h4>
-      <ul>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">Privacy</a></li>
-        <li><a href="#">Terms</a></li>
-      </ul>
-    </div>
-  </footer>
+      <button class="nav__burger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
 
-  <div class="footer-bottom">
-    <p>© 2026 VISIONARY. All rights reserved.</p>
-    <p>Photography by Zoomin</p>
+  <div class="nav__drawer">
+    <a href="index.html">Home</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="education.html">Education</a>
+    <a href="contacts.html">Contact</a>
   </div>
 
+  <main class="gallery-page">
+    <div class="gallery-page__header">
+      <h1 class="gallery-page__title">Gallery</h1>
+      <span class="gallery-page__count">12 photos</span>
+    </div>
+
+    <div class="gallery-full">
+      <div class="grid-item">
+        <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=800&q=80&auto=format&fit=crop" alt="Portrait 1" loading="lazy" />
+      </div>
+      <div class="grid-item">
+        <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=800&q=80&auto=format&fit=crop" alt="Portrait 2" loading="lazy" />
+      </div>
+      <div class="grid-item">
+        <img src="https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=800&q=80&auto=format&fit=crop" alt="Portrait 3" loading="lazy" />
+      </div>
+      <div class="grid-item">
+        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=800&q=80&auto=format&fit=crop" alt="Portrait 4" loading="lazy" />
+      </div>
+      <div class="grid-item">
+        <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=800&q=80&auto=format&fit=crop" alt="Portrait 5" loading="lazy" />
+      </div>
+      <div class="grid-item">
+        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=800&q=80&auto=format&fit=crop" alt="Portrait 6" loading="lazy" />
+      </div>
+      <div class="grid-item">
+        <img src="https://images.unsplash.com/photo-1552374196-c4e7ffc6e126?w=800&q=80&auto=format&fit=crop" alt="Portrait 7" loading="lazy" />
+      </div>
+      <div class="grid-item">
+        <img src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?w=800&q=80&auto=format&fit=crop" alt="Portrait 8" loading="lazy" />
+      </div>
+      <div class="grid-item">
+        <img src="https://images.unsplash.com/photo-1487222477894-8943e31ef7b2?w=800&q=80&auto=format&fit=crop" alt="Portrait 9" loading="lazy" />
+      </div>
+      <div class="grid-item">
+        <img src="https://images.unsplash.com/photo-1463453091185-61582044d556?w=800&q=80&auto=format&fit=crop" alt="Portrait 10" loading="lazy" />
+      </div>
+      <div class="grid-item">
+        <img src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?w=800&q=80&auto=format&fit=crop" alt="Portrait 11" loading="lazy" />
+      </div>
+      <div class="grid-item">
+        <img src="https://images.unsplash.com/photo-1491349174775-aaaefdd81942?w=800&q=80&auto=format&fit=crop" alt="Portrait 12" loading="lazy" />
+      </div>
+    </div>
+  </main>
+
+  
+  <div class="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer">
+    <button class="lightbox__close">Close</button>
+    <button class="lightbox__prev" aria-label="Previous">&larr;</button>
+    <img class="lightbox__img" src="" alt="Gallery photo" />
+    <button class="lightbox__next" aria-label="Next">&rarr;</button>
+    <p class="lightbox__counter"></p>
+  </div>
+
+  <footer class="footer">
+    <div class="footer__brand">
+      <a href="index.html" class="logo">VISIONARY</a>
+      <p>Photography by Zoomin<br>Kamyanske, Ukraine</p>
+    </div>
+    <div class="footer__col">
+      <h4>Navigate</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="contacts.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <h4>Learn</h4>
+      <ul>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="education.html">Courses</a></li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <h4>Social</h4>
+      <ul>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="mailto:zoomin@email.com">Email</a></li>
+      </ul>
+    </div>
+  
+  <div class="footer__bottom">
+    <p>&copy; 2026 VISIONARY. All rights reserved.</p>
+    <p>Photography by Zoomin</p>
+  </div>
+</footer>
+  <script src="js/main.js"></script>
 </body>
 </html>

@@ -3,136 +3,173 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="VISIONARY — портфолио фотографа Zoomin з Кам'янського" />
   <title>VISIONARY</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/nav.css" />
+  <link rel="stylesheet" href="css/hero.css" />
+  <link rel="stylesheet" href="css/sections.css" />
+  <link rel="stylesheet" href="css/footer.css" />
 </head>
 <body>
 
-  <!-- NAV -->
-  <nav>
-    <a href="#" class="logo">VISIONARY</a>
-    <ul class="nav-links">
-      <li><a href="#" class="active">Home</a></li>
-      <li><a href="#gallery">Gallery</a></li>
-      <li><a href="#about">Education</a></li>
-      <li><a href="#contacts">Contact</a></li>
-    </ul>
-  </nav>
+  
+  <header>
+    <nav class="nav">
+      <a href="index.html" class="nav__logo">VISIONARY</a>
 
-  <!-- HERO -->
-  <section class="hero">
-    <img
-      class="hero-img"
-      src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=1400&q=80&auto=format&fit=crop"
-      alt="Photographer portrait"
-    />
-    <div class="hero-overlay"></div>
-    <div class="hero-text">
-      <h1>Capturing<br>Moments</h1>
-      <p>Photography by Zoomin · Kamyanske</p>
-    </div>
-  </section>
-
-  <!-- ABOUT + CONTACTS -->
-  <section class="info-section" id="about">
-    <div class="info-block">
-      <h2>Про мене</h2>
-      <p>Я фотограф, який обожнює нестандартні локації, унікальних людей та сонячне світло. Я спеціалізуюся на студійній зйомці, але без вагань приймаю будь-які виклики.</p>
-      <p>Я народився в Кам'янському і з самого дитинства любив спостерігати за людьми на вулицях, помічаючи їхні особливості та погляди.</p>
-      <p>Я обожнюю експерименти та нові місця. Моє останнє захоплення — чорно-біла фотографія, стильна та неповторна.</p>
-    </div>
-
-    <div class="info-block" id="contacts">
-      <h2>Контакти</h2>
-      <div class="contact-item">
-        <div class="label">Phone:</div>
-        <a href="tel:+17194452808" class="value">(719) 445-2808</a>
-      </div>
-      <div class="contact-item">
-        <div class="label">E-mail:</div>
-        <a href="mailto:zoomin@email.com" class="value">zoomin@email.com</a>
-      </div>
-      <div class="contact-item">
-        <div class="label">Instagram:</div>
-        <a href="#" class="value">zoomin</a>
-      </div>
-      <div class="contact-item">
-        <div class="label">Facebook:</div>
-        <a href="#" class="value">www.facebook.com/zoomin</a>
-      </div>
-    </div>
-
-    <div class="info-block">
-      <img
-        class="info-photo"
-        src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=800&q=80&auto=format&fit=crop"
-        alt="Camera close-up"
-      />
-    </div>
-  </section>
-
-  <!-- GALLERY -->
-  <section class="gallery-section" id="gallery">
-    <h2>Gallery</h2>
-    <div class="gallery-grid">
-      <div class="gallery-item">
-        <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=600&q=80&auto=format&fit=crop" alt="Portrait 1" />
-      </div>
-      <div class="gallery-item">
-        <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=600&q=80&auto=format&fit=crop" alt="Portrait 2" />
-      </div>
-      <div class="gallery-item">
-        <img src="https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=600&q=80&auto=format&fit=crop" alt="Portrait 3" />
-      </div>
-      <div class="gallery-item">
-        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=600&q=80&auto=format&fit=crop" alt="Portrait 4" />
-      </div>
-      <div class="gallery-item">
-        <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=600&q=80&auto=format&fit=crop" alt="Portrait 5" />
-      </div>
-      <div class="gallery-item">
-        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=600&q=80&auto=format&fit=crop" alt="Portrait 6" />
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer>
-    <div class="footer-brand">
-      <a href="#" class="logo">Y</a>
-      <p>About what your company does.</p>
-    </div>
-    <div class="footer-col">
-      <h4>Features</h4>
-      <ul>
-        <li><a href="#">Core features</a></li>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">Pricing</a></li>
+      <ul class="nav__links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="contacts.html">Contact</a></li>
       </ul>
-    </div>
-    <div class="footer-col">
-      <h4>Learn more</h4>
-      <ul>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">FAQ</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h4>Support</h4>
-      <ul>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">Privacy</a></li>
-        <li><a href="#">Terms</a></li>
-      </ul>
-    </div>
-  </footer>
 
-  <div class="footer-bottom">
-    <p>© 2026 VISIONARY. All rights reserved.</p>
-    <p>Photography by Zoomin</p>
+      <button class="nav__burger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </header>
+
+  
+  <div class="nav__drawer" aria-hidden="true">
+    <a href="index.html">Home</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="education.html">Education</a>
+    <a href="contacts.html">Contact</a>
   </div>
 
+  
+  <section class="hero">
+    <img class="hero__img" src="assets/img/man.png" alt="Photographer portrait" />
+    <div class="hero__overlay"></div>
+
+    <div class="hero__content">
+      <h1 class="hero__title">Capturing<br>Moments</h1>
+      <p class="hero__sub">Photography by Zoomin &middot; Kamyanske</p>
+    </div>
+
+    <div class="hero__scroll" aria-hidden="true">
+      <span>Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  
+  <section class="section" id="about">
+    <div class="about">
+      <div class="about__text reveal">
+        <h2>Про мене</h2>
+        <p>Я фотограф, який обожнює нестандартні локації, унікальних людей та сонячне світло. Спеціалізуюся на студійній зйомці, але без вагань приймаю будь-які виклики.</p>
+        <p>Народився в Кам'янському і з дитинства любив спостерігати за людьми на вулицях, помічаючи деталі та погляди.</p>
+        <p>Обожнюю експерименти та нові місця. Останнє захоплення — чорно-біла фотографія, стильна та неповторна.</p>
+      </div>
+
+      <div class="about__contacts reveal" style="transition-delay: 0.15s">
+        <h2>Контакти</h2>
+        <div class="about__contact-row">
+          <div class="lbl">Phone</div>
+          <a href="tel:+17194452808">(719) 445-2808</a>
+        </div>
+        <div class="about__contact-row">
+          <div class="lbl">E-mail</div>
+          <a href="mailto:zoomin@email.com">zoomin@email.com</a>
+        </div>
+        <div class="about__contact-row">
+          <div class="lbl">Instagram</div>
+          <a href="#">@zoomin</a>
+        </div>
+        <div class="about__contact-row">
+          <div class="lbl">Facebook</div>
+          <a href="#">facebook.com/zoomin</a>
+        </div>
+      </div>
+
+      <div class="about__photo-wrap reveal" style="transition-delay: 0.3s">
+        <img
+          class="about__photo"
+          src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=800&q=80&auto=format&fit=crop"
+          alt="Camera close-up"
+          loading="lazy"
+        />
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="section gallery-preview" id="gallery">
+    <div class="gallery-preview__head">
+      <h2 class="gallery-preview__title reveal">Gallery</h2>
+      <a href="gallery.html" class="gallery-preview__link reveal" style="transition-delay:0.1s">
+        View all &rarr;
+      </a>
+    </div>
+
+    <div class="grid-3">
+      <div class="grid-item">
+        <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=600&q=80&auto=format&fit=crop" alt="Portrait 1" loading="lazy" />
+      </div>
+      <div class="grid-item">
+        <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=600&q=80&auto=format&fit=crop" alt="Portrait 2" loading="lazy" />
+      </div>
+      <div class="grid-item">
+        <img src="https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=600&q=80&auto=format&fit=crop" alt="Portrait 3" loading="lazy" />
+      </div>
+      <div class="grid-item">
+        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=600&q=80&auto=format&fit=crop" alt="Portrait 4" loading="lazy" />
+      </div>
+      <div class="grid-item">
+        <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=600&q=80&auto=format&fit=crop" alt="Portrait 5" loading="lazy" />
+      </div>
+      <div class="grid-item">
+        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=600&q=80&auto=format&fit=crop" alt="Portrait 6" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  
+  <footer class="footer">
+    <div class="footer__brand">
+      <a href="index.html" class="logo">VISIONARY</a>
+      <p>Photography by Zoomin<br>Kamyanske, Ukraine</p>
+    </div>
+    <div class="footer__col">
+      <h4>Navigate</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="contacts.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <h4>Learn</h4>
+      <ul>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="education.html">Courses</a></li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <h4>Social</h4>
+      <ul>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="mailto:zoomin@email.com">Email</a></li>
+      </ul>
+    </div>
+  
+  <div class="footer__bottom">
+    <p>&copy; 2026 VISIONARY. All rights reserved.</p>
+    <p>Photography by Zoomin</p>
+  </div>
+</footer>
+  <script src="js/main.js"></script>
 </body>
 </html>
